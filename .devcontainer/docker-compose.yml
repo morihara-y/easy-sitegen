@@ -13,6 +13,7 @@ services:
     command: >
       -c "
         apt-get update &&
-        apt-get -y install git curl vim
+        apt-get -y install git curl vim &&
+        git config --global --add safe.directory /easy-sitegen
         /bin/sh
       "
