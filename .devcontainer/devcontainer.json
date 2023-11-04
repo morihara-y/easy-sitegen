@@ -1,0 +1,21 @@
+{
+  // change the name for your project
+  "name": "easy-sitegen",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "devcontainer",
+  // change the workspace for your project
+  "workspaceFolder": "/easy-sitegen",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "jawandarajbir.react-vscode-extension-pack",
+        "dbaeumer.vscode-eslint"
+      ],
+      "settings": {
+        "editor.tabSize": 2,
+        "git.path": "/usr/bin/git"
+      }
+    }
+  }
+}
