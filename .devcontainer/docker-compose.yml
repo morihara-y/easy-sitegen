@@ -1,0 +1,18 @@
+version: "3.6"
+services:
+  devcontainer:
+    # change the name for your project
+    container_name: easy-sitegen
+    # change the name for your project
+    volumes:
+      - ../:/easy-sitegen
+    stdin_open: true
+    tty: true
+    image: node:20-slim
+    entrypoint: /bin/sh
+    command: >
+      -c "
+        apt-get update &&
+        apt-get -y install git curl vim
+        /bin/sh
+      "
