@@ -14,6 +14,7 @@ services:
       -c "
         apt-get update &&
         apt-get -y install git curl vim &&
+        npm install &&
         git config --global --add safe.directory /easy-sitegen
         /bin/sh
       "
